@@ -47,7 +47,7 @@
                 <td th:text="${product.category}"></td>
                 <td th:text="@{${product.price} + 'Ksh'}"></td>
                 <td style="width:100px;">
-                    <img th:src="@{'images/images' + ${product.imageFileName}}" alt="${product.name}" style="width:100%;">
+                    <img th:src="@{'images/' + ${product.imageFileName}}" alt="${product.name}" style="width:100%;">
                 </td>
                 <td th:text="${product.createdAt.toString.substring(0,10)}" ></td>
                 <td>

@@ -19,10 +19,10 @@ public class ProductRequest {
     private String brand;
     @NotEmpty(message = "Category is required!")
     private String category;
-    @NotEmpty(message = "Product price is required!")
     @Min(0)
     private double price;
     @Size(min=10, message = "Description text provided should not be below 10 words")
     @Size(max = 1000, message = "Maximum description words should not be above 1000 words")
+    private String description;
     private MultipartFile imageFileName;
 }
